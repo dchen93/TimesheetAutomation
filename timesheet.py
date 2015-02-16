@@ -33,7 +33,7 @@ class Test2(unittest.TestCase):
 
         for handle in driver.window_handles[1:]:
             driver.switch_to_window(handle)
-            if(self.is_element_present(By.ID, "selection_18")):
+            if self.is_element_present(By.ID, "selection_" + str(start_date)):
                 break
 
         driver.find_element_by_id("selection_" + str(start_date)).click()
@@ -44,115 +44,68 @@ class Test2(unittest.TestCase):
         driver.find_element_by_id("weekList0.dayList0.clockInOutList0.userClockOut").clear()
         driver.find_element_by_id("weekList0.dayList0.clockInOutList0.userClockOut").send_keys("7")
         driver.find_element_by_xpath("(//button[@type='button'])[27]").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("selection_" + str(start_date + 1)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("dropdown-clock_" + str(start_date + 1)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList0.dayList1.clockInOutList0.userClockIn").clear()
         driver.find_element_by_id("weekList0.dayList1.clockInOutList0.userClockIn").send_keys("8")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList0.dayList1.clockInOutList0.userClockOut").clear()
         driver.find_element_by_id("weekList0.dayList1.clockInOutList0.userClockOut").send_keys("12")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_xpath("(//button[@type='button'])[27]").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("selection_" + str(start_date + 3)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("dropdown-clock_" + str(start_date + 1)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList0.dayList3.clockInOutList0.userClockIn").clear()
         driver.find_element_by_id("weekList0.dayList3.clockInOutList0.userClockIn").send_keys("8")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList0.dayList3.clockInOutList0.userClockOut").clear()
         driver.find_element_by_id("weekList0.dayList3.clockInOutList0.userClockOut").send_keys("10")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_css_selector("span.hoverselect").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_xpath("(//button[@type='button'])[27]").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("selection_" + str(start_date + 4)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("dropdown-clock_" + str(start_date + 4)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList0.dayList4.clockInOutList0.userClockIn").clear()
         driver.find_element_by_id("weekList0.dayList4.clockInOutList0.userClockIn").send_keys("4")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_css_selector("span.hoverselect").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList0.dayList4.clockInOutList0.userClockOut").clear()
         driver.find_element_by_id("weekList0.dayList4.clockInOutList0.userClockOut").send_keys("6")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_xpath("(//button[@type='button'])[27]").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("selection_" + str(start_date + 5)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("dropdown-clock_" + str(start_date + 5)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList0.dayList5.clockInOutList0.userClockIn").clear()
         driver.find_element_by_id("weekList0.dayList5.clockInOutList0.userClockIn").send_keys("3")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_css_selector("span.hoverselect").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList0.dayList5.clockInOutList0.userClockOut").clear()
         driver.find_element_by_id("weekList0.dayList5.clockInOutList0.userClockOut").send_keys("4")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_xpath("(//button[@type='button'])[27]").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("selection_" + str(start_date + 8)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("dropdown-clock_" +  + str(start_date + 8)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList1.dayList1.clockInOutList0.userClockIn").clear()
         driver.find_element_by_id("weekList1.dayList1.clockInOutList0.userClockIn").send_keys("8")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList1.dayList1.clockInOutList0.userClockOut").clear()
         driver.find_element_by_id("weekList1.dayList1.clockInOutList0.userClockOut").send_keys("12")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_xpath("(//button[@type='button'])[27]").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("selection_" + str(start_date + 10)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("dropdown-clock_" + str(start_date + 10)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList1.dayList3.clockInOutList0.userClockIn").clear()
         driver.find_element_by_id("weekList1.dayList3.clockInOutList0.userClockIn").send_keys("8")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList1.dayList3.clockInOutList0.userClockOut").clear()
         driver.find_element_by_id("weekList1.dayList3.clockInOutList0.userClockOut").send_keys("10")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_css_selector("span.hoverselect").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_xpath("(//button[@type='button'])[27]").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("selection_" + str(start_date + 11)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("dropdown-clock_" + str(start_date + 11)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList1.dayList4.clockInOutList0.userClockIn").clear()
         driver.find_element_by_id("weekList1.dayList4.clockInOutList0.userClockIn").send_keys("7")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_css_selector("span.hoverselect").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList1.dayList4.clockInOutList0.userClockOut").clear()
         driver.find_element_by_id("weekList1.dayList4.clockInOutList0.userClockOut").send_keys("11")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_xpath("(//button[@type='button'])[27]").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("selection_" + str(start_date + 12)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("dropdown-clock_" + str(start_date + 12)).click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList1.dayList5.clockInOutList0.userClockIn").clear()
         driver.find_element_by_id("weekList1.dayList5.clockInOutList0.userClockIn").send_keys("3")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_css_selector("span.hoverselect").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_id("weekList1.dayList5.clockInOutList0.userClockOut").clear()
         driver.find_element_by_id("weekList1.dayList5.clockInOutList0.userClockOut").send_keys("5")
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]
         driver.find_element_by_xpath("(//button[@type='button'])[27]").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | name=c0-param3 | ]]   
 
         driver.find_element_by_name("save").click()
 
