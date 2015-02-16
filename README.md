@@ -1,1 +1,1 @@
-Student Housing has a horrible web interface. This navigates it for me.
+Student Housing has a horrible web interface for biweekly timesheet submission. This automates my timesheet submission.
